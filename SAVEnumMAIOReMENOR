@@ -1,0 +1,40 @@
+# SaveNumMAIOReMENOR
+Algoritmo que pede ao usuário para digitar números inteiros e positivos, e no final mostra qual foi o MAIOR número digitado e o MENOR número digitado.
+
+
+
+
+
+programa // by Rehfeld13
+{
+	
+	funcao inicio()
+	{
+	inteiro num
+
+	escreva("Escreva um número inteiro positivo: ")
+	leia(num)
+
+	inteiro numMaior = num, numMenor = num
+
+	enquanto (num>=0) 
+	     {
+		
+		se (num<numMenor){
+			numMenor = num
+			}
+		se (num>numMaior){
+			numMaior = num
+			}
+
+			escreva ("Escreva um número inteiro positivo: ")
+			leia(num)
+	
+		}
+		
+	    escreva ("\n")
+	    escreva ("Maior número digitado foi: "+numMaior+ "\n")
+	    escreva ("Menor número digitado foi: "+numMenor+ "\n")
+     
+     }
+}
